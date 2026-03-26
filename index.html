@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CGR Consultoria em TI</title>
+    <title>CGR Consultoria em TI | Navy Edition</title>
     <style>
-        /* Estética All Black Absoluta */
+        /* Estética Navy Blue Tecnológica */
         body {
             margin: 0;
             padding: 0;
             font-family: 'Montserrat', sans-serif;
-            background-color: #000000;
+            background-color: #020814; /* Azul Marinho Profundo */
             color: #ffffff;
             scroll-behavior: smooth;
         }
@@ -23,7 +23,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background-color: #000000;
+            background: radial-gradient(circle at center, #051630 0%, #020814 100%);
         }
 
         .hero h1 {
@@ -39,7 +39,7 @@
             font-size: 18px;
             font-weight: 300;
             margin-top: 5px;
-            color: #bbbbbb; /* Cinza mais claro para leitura */
+            color: #8da2c0; /* Azul acinzentado para suporte */
             letter-spacing: 12px;
             text-transform: uppercase;
         }
@@ -68,34 +68,35 @@
         }
 
         .card {
-            background: #000000;
+            background: #030d1f; /* Card levemente mais claro que o fundo */
             padding: 45px;
-            border: 1px solid #222222; /* Borda levemente mais visível */
+            border: 1px solid #0a1f44; /* Borda em azul metálico */
             transition: all 0.5s ease;
         }
 
         .card:hover {
-            border-color: #ffffff;
-            background: #0a0a0a;
+            border-color: #3a86ff; /* Destaque em azul vibrante no hover */
+            background: #051630;
+            transform: translateY(-5px);
         }
 
         .card h3 {
             color: #ffffff;
             font-size: 18px;
-            font-weight: 700; /* Título bem visível */
+            font-weight: 700;
             margin-bottom: 20px;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
 
         .card p {
-            font-size: 15px; /* Fonte levemente maior */
+            font-size: 15px;
             line-height: 1.8;
-            color: #cccccc; /* Cinza prateado para leitura perfeita */
-            font-weight: 400; /* Peso médio para não sumir no fundo preto */
+            color: #a5b4cc; /* Texto em azul pálido para leitura confortável */
+            font-weight: 400;
         }
 
-        /* Botão do WhatsApp - Limpo, Redondo com Giro 360 */
+        /* Botão do WhatsApp - Branco para Contraste */
         .btn-wpp {
             position: fixed;
             bottom: 40px;
@@ -107,29 +108,31 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow: 0 0 20px rgba(255,255,255,0.1);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
             z-index: 2000;
             transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), background 0.4s;
             text-decoration: none !important;
-            outline: none;
-            border: none;
         }
 
         .btn-wpp:hover {
-            transform: rotate(360deg);
-            background: #f0f0f0;
+            transform: rotate(360deg) scale(1.1);
+            background: #3a86ff; /* Muda para azul no hover */
         }
 
         .btn-wpp i {
             font-size: 28px;
-            color: #000000;
+            color: #020814;
+        }
+
+        .btn-wpp:hover i {
+            color: #ffffff;
         }
 
         footer {
             text-align: center;
             padding: 100px 20px;
             font-size: 12px;
-            color: #555555;
+            color: #3e5171;
             letter-spacing: 2px;
             text-transform: uppercase;
         }
@@ -150,7 +153,7 @@
     </section>
 
     <div class="container">
-        <h3 class="section-title">Consulte Especialidades</h3>
+        <h3 class="section-title">Soluções Especializadas</h3>
         
         <div class="services-grid">
             <div class="card">
