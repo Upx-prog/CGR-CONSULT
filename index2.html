@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGR Consultoria em TI</title>
+    <style>
+        /* Estética All Black Absoluta */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #000000;
+        }
+
+        .hero h1 {
+            font-size: 90px;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: -3px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        .hero h2 {
+            font-size: 18px;
+            font-weight: 300;
+            margin-top: 5px;
+            color: #bbbbbb; /* Cinza mais claro para leitura */
+            letter-spacing: 12px;
+            text-transform: uppercase;
+        }
+
+        /* Container de Serviços */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 26px;
+            color: #fff;
+            margin-bottom: 80px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: 500;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #000000;
+            padding: 45px;
+            border: 1px solid #222222; /* Borda levemente mais visível */
+            transition: all 0.5s ease;
+        }
+
+        .card:hover {
+            border-color: #ffffff;
+            background: #0a0a0a;
+        }
+
+        .card h3 {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 700; /* Título bem visível */
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .card p {
+            font-size: 15px; /* Fonte levemente maior */
+            line-height: 1.8;
+            color: #cccccc; /* Cinza prateado para leitura perfeita */
+            font-weight: 400; /* Peso médio para não sumir no fundo preto */
+        }
+
+        /* Botão do WhatsApp - Limpo, Redondo com Giro 360 */
+        .btn-wpp {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            width: 60px;
+            height: 60px;
+            background: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 20px rgba(255,255,255,0.1);
+            z-index: 2000;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), background 0.4s;
+            text-decoration: none !important;
+            outline: none;
+            border: none;
+        }
+
+        .btn-wpp:hover {
+            transform: rotate(360deg);
+            background: #f0f0f0;
+        }
+
+        .btn-wpp i {
+            font-size: 28px;
+            color: #000000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 100px 20px;
+            font-size: 12px;
+            color: #555555;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 60px; }
+            .hero h2 { font-size: 12px; letter-spacing: 6px; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <section class="hero">
+        <h1>CGR</h1>
+        <h2>Consultoria em TI</h2>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Especialidades Profissionais</h2>
+        
+        <div class="services-grid">
+            <div class="card">
+                <h3>Microcomputadores</h3>
+                <p>Suporte de alto nível, diagnóstico preciso e manutenção avançada de hardware e software corporativo.</p>
+            </div>
+            <div class="card">
+                <h3>Redes Cabeadas</h3>
+                <p>Implementação de infraestrutura de rede estruturada para máxima estabilidade e performance de dados.</p>
+            </div>
+            <div class="card">
+                <h3>Redes Wi-Fi</h3>
+                <p>Otimização de sinal e cobertura wireless com criptografia de última geração e segurança total.</p>
+            </div>
+            <div class="card">
+                <h3>Impressoras</h3>
+                <p>Configuração em rede e manutenção preventiva de sistemas de impressão de alta demanda.</p>
+            </div>
+            <div class="card">
+                <h3>Segurança Digital</h3>
+                <p>Blindagem de dados, backup estratégico e proteção contra vulnerabilidades externas.</p>
+            </div>
+            <div class="card">
+                <h3>Consultoria</h3>
+                <p>Gestão técnica e planejamento de infraestrutura para redução de custos e excelência operacional.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 CGR CONSULTORIA EM TI. TODOS OS DIREITOS RESERVADOS.
+    </footer>
+
+    <a href="https://wa.me/55319XXXXXXXX" class="btn-wpp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
